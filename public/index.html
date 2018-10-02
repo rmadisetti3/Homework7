@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+    crossorigin="anonymous">
+  <title>To Do List</title>
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <style>
+    body {
+    margin: 0;
+}
+h1 {
+    background-color: purple;
+    color: white;
+    padding: 30px;
+    margin: 0;
+    font-size: 40px;
+    font-weight: 5;
+}
+input {
+    border-radius: 5px;
+    border: solid;
+    border-color: purple;
+    font-weight: bold;
+    position: relative;
+    margin: 45px;
+    width: 75%;
+}
+#arrow {
+    position: relative;
+    left: 360px;
+    bottom: 65px;
+}
+.listItems {
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  display: inline-block;
+  background-color: rgb(231, 231, 231);
+  margin: 20px; 
+    position: relative;
+    left: 30px;
+    bottom: 20px;
+    width: 75%;
+    height: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    border-radius: 5px;
+
+}
+.card-title {
+  position: relative;
+  left: 30px;
+    bottom: 40px;
+}
+#xButton {
+  position: relative;
+  left: 280px;
+    bottom: 75px;
+}
+</style>
+</head>
+
+<body>
+  <div></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="jumbotron mt-5">
+          <h1 class="display-4">Raj's To Do List</h1>
+        </div>
+        <div class="card mb-3">
+          <div class="card-body">
+            <form>
+              <div class="form-group">
+                <input type="text" class="form-control" id="content" placeholder="Add a to do">
+              </div>
+              <button id="arrow" type="submit" class="submit btn btn-primary"><i class="fas fa-arrow-alt-circle-right"></i></button>
+            </form>
+          </div>
+        </div>
+
+        <div class="card mb-5">
+          <div class="card-body" id="holder">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <script src="./app.js"></script>
+</body>
+
+</html>
